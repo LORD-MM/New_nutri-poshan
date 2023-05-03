@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1dbcd8;
+      height: 100vh;
+    }
+
+    /* Center the container */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    margin-top: 145px;
+    margin-bottom: 36px;
+    }
+
+    .container {
+      width: 35vw;
+      height: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #f2f2f2;
+      color: #444;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form action="/signup" method="post" id="form">
+        <label for="instituteName">Institute's name</label>
+        <input type="text" id="instituteName" name="instituteName" placeholder="Enter your Institute's name" required>
+        <label for="instituteEmail">Institute's Email</label>
+        <input type="email" id="instituteEmail" name="instituteEmail" placeholder="Enter your Institute's email" required>
+        <label for="instituteAddress">Institute's address</label>
+        <input type="text" id="instituteAddress" name="instituteAddress" placeholder="Enter your Institute's address" required>
+        <label for="moderatorName">Your moderator's name</label>
+        <input type="text" id="moderatorName" name="moderatorName" placeholder="Enter your moderator's name" required>
+        <label for="moderatorEmail">Moderator's Email</label>
+        <input type="email" id="moderatorEmail" name="moderatorEmail" placeholder="Enter your moderator's email" required>
+        <label for="moderatorPhone">Moderator's phone no.</label>
+        <input type="tel" id="moderatorPhone" name="moderatorPhone" placeholder="Enter your moderator's phone no." required>
+        <label for="loginPass">Password</label>
+        <input type="password" id="loginPass" name="loginPass" placeholder="Enter a strong password" required>
+        <button id="submit-button" value="Submit">submit</button>
+      </form>
+      <p>Already have an account? <a href="./login.html">Log In</a></p>
+    </div>
+  </main>
+  <script>
+    
+    const formElement = document.querySelector('#form');
+    const handleSubmit = async (event) => {
+    event.preventDefault();
+    // form = event.target;
+    
+    if(confirm("Do You really want to submit the form?")){
+    try {
+      const response = await fetch('/signup', {
+        method: 'post',
+        body: new FormData(formElement),
+      }).then(()=>{
+        formElement.submit();
+      })
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Handle error here
+    }
+
+  }
+  };
+
+
+  
+const submitButton = document.querySelector('#submit-button');
+submitButton.onclick = handleSubmit;
+//   const form = document.querySelector('form');
+//   form.addEventListener('submit', async event => {
+//     event.preventDefault(); // prevent the form from submitting normally
+//     const formData = new FormData(form); 
+//     console.log(form);
+//   await fetch('/signup', {
+//   method: 'post',
+//   body: formData
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//     window.location.href = '/login.html'; // redirect to login page
+//     alert(data.message); // display the message in an alert dialogue box
+//   })
+//   .catch(error => {
+//     console.error(error);
+//   });
+// });
+
+</script>
+</body>
+
+</html>

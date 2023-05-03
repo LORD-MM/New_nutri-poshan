@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classes Section Example</title>
+    <style>
+h2,
+body,
+figure,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-image: url("bodybg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Header styles */
+header {
+  background-image: linear-gradient(to right, #2a7c5e, #339d46);
+  color: #A5B;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #141736;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+	    
+/* Footer styles */
+footer {
+  background-color: #000000;
+  color: #6c757d;
+  padding: 40px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-column ul li a {
+  color: #6c757d;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.classes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-card {
+    width: 200px;
+
+    margin: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.class-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.class-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4179cd;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #29689f;
+}
+
+</style>
+    
+</head>
+<body>
+	<header>
+    <a href="index.html">
+	<img src="\images\logo_nobg_nutriposhan.png" alt="Logo" style="
+    	width: 256px;
+    	height: 100px;
+	">
+    </a>
+    <nav>
+      <ul>
+        
+        <li><a href="login.html">Sign in</a></li>
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="https://www.poshantracker.in/ptcalculator" target="_blank">Calculator</a></li>
+        <li><a href="https://pmposhan.education.gov.in/" target="_blank">PM Poshan</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <h2><center>Select Class</center></h2><br>
+    <section class="classes-section">
+        
+        
+        
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 1</h3></a>
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 2</h3></a>
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 3</h3></a> 
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 4</h3></a>
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 5</h3></a>
+        </div>
+        <div class="class-card">
+		<h3><a href="upload.html" class="btn">Class 6</h3></a>
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 7</h3></a>
+        </div>
+        <div class="class-card">
+		<a href="upload.html" class="btn"><h3>Class 8</h3></a>
+        </div> 
+        </div>
+    </section>
+<section>    
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><i class="fa fa-map-marker"></i> 123 Main St, Anytown, USA 12345</li>
+        <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+        <li><i class="fa fa-envelope"></i> info@yourwebsite.com</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1jESP_UZ_FimL0cg2Ul09ivwNq22CBVMe/view?usp=sharing" target="_blank">Terms of Service</a></li>
+        <li><a href="https://drive.google.com/file/d/1s-jWOaHFYsrejLxBFhfYtfMsQ8_eNuAP/view?usp=sharing" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://drive.google.com/file/d/1yJOG9wVILkQm1IQdFOtU5nXy4ut0IcP7/view?usp=sharing" target="_blank">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

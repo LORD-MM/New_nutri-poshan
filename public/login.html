@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+
+/* Header styles */
+header {
+  background-image: linear-gradient(to right, #2a7c5e, #339d46);
+  color: #A5B;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #141736;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-image: url("/images/bodybg.jpg"); /* Replace with background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px); /* Adjust the blur strength as desired */
+  font-family: Lucida Bright, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+main {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+
+/*login box styles */
+.login-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.login-box label,
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-box label {
+    font-weight: bold;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  padding: 10px;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+        
+/* Footer styles */
+footer {
+  background-color: #000000;
+  color: #6c757d;
+  padding: 40px 0;
+  position: absolute;
+  margin-top: 100px;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-column ul li a {
+  color: #6c757d;
+}
+
+.fa {
+  margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+  <header>
+  <a href="index.html">
+	<img src="\images\logo_nobg_nutriposhan.png" alt="Logo" style="
+    	width: 256px;
+    	height: 100px;
+	">
+    </a>
+    <nav>
+      <ul>
+        
+<!--         <li><a href="login.html">Sign in</a></li> -->
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="https://www.poshantracker.in/ptcalculator" target="_blank">Calculator</a></li>
+        <li><a href="https://pmposhan.education.gov.in/" target="_blank">PM Poshan</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="/login" method="post" id="form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button id="submit-button" value="Submit">Login</button>
+      </form>      
+	<p>Don't have an account?    <a href="./signup.html"> Signup</a></p>
+  </div>
+  </main>
+    
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><i class="fa fa-map-marker"></i> Government College Of Engineering, Khapri, Nagpur</li>
+        <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+        <li><i class="fa fa-envelope"></i> info@yourwebsite.com</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="t&c.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+  // const form = document.querySelector('form');
+  // form.addEventListener('submit', event => {
+  //   event.preventDefault(); // prevent the form from submitting normally
+  //   const formData = new FormData(form);
+  //   fetch('/login', {
+  //     method: 'post',
+  //     body: formData
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     if (data.success) {
+  //       window.location.href = "./classes.html";
+  //       alert(data.message);
+  //     } else {
+  //       alert(data.message);
+  //     }
+  //   })
+  //   .catch(error => {
+  //     console.error(error);
+  //   });
+  // });
+
+  const formElement = document.querySelector('#form');
+    const handleSubmit = async (event) => {
+    event.preventDefault();
+    
+    if(confirm("Do You really want to login?")){
+    try {
+      const response = await fetch('/login', {
+        method: 'post',
+        body: new FormData(formElement),
+      }).then(()=>{
+        formElement.submit();
+      })
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Handle error here
+    }
+
+  }
+  };
+  const submitButton = document.querySelector('#submit-button');
+  submitButton.onclick = handleSubmit;
+</script>
+</body>
+
+</html>

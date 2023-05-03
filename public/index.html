@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutri-Poshan</title>
+  <style>
+body,
+figure,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Lucida Bright, sans-serif;
+  font-size: 16px;
+  background-image: url("/images/circlesbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* Header styles */
+header {
+  background-image: linear-gradient(to right, #2a7c5e, #339d46);
+  color: #A5B;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #141736;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+  color: #000;
+  padding: 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #000000;
+}
+
+/* Features section styles */
+.features {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  flex-basis: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000000;
+  color: #6c757d;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-column ul li a {
+  color: #6c757d;
+}
+
+.fa {
+  margin-right: 10px;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+	<img src=".\images\logo_nobg_nutriposhan.png" alt="Logo" style="
+    	width: 256px;
+    	height: 100px;
+	">
+    </a>
+    <nav>
+      <ul>
+        
+        <li><a href="./login.html">Sign in</a></li>
+        <li><a href="./signup.html">Sign up</a></li>
+        <li><a href="https://www.poshantracker.in/ptcalculator" target="_blank">Calculator</a></li>
+        <li><a href="https://pmposhan.education.gov.in/" target="_blank">PM Poshan</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welcome to Nutri-Poshan</h1>
+    <p>A Nutritional Tracker and Analyzer</p>
+    <p>It will enable government aided schools to track the mid-day meal plans with respect to the ideal nutrient levels.</p>
+    <a href="./login.html" class="cta">Get Started</a>
+  </section>
+  <section class="features">
+    <h2>Our Features</h2>
+    
+    <div class="feature">
+      <img src=".\images\children_food.jpg" alt="Feature 2">
+      <h3>​Why there's a need for Nutri-Poshan?</h3>
+      <p>​With respect to Maharashtra 6 lakh+ children are having deficit nutrition, the state has been observing a rise in the no of malnutritious children, more of which studying at government and aided schools are highly affected by the mid day meals being provided. So nutri poshan will map the void between expected and actual nutrient levels being served to the students.</p>
+    </div>
+    <div class="feature">
+      <img src=".\images\vegie_bowl.webp" alt="Feature 3">
+      <h3>​What will Nutri-Poshan do?</h3>
+      <p>​It will take sectionwise weekly data of the meals being provided to the students and generate a monthly report for the same. This report in turn helps the moderator to implement better modifications to the meal plan.</p>
+    </div>
+  </section>
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><i class="fa fa-map-marker"></i> Government College Of Engineering, Khapri, Nagpur</li>
+        <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+        <li><i class="fa fa-envelope"></i> info@yourwebsite.com</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1jESP_UZ_FimL0cg2Ul09ivwNq22CBVMe/view?usp=sharing" target="_blank">Terms of Service</a></li>
+        <li><a href="https://drive.google.com/file/d/1s-jWOaHFYsrejLxBFhfYtfMsQ8_eNuAP/view?usp=sharing" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://drive.google.com/file/d/1yJOG9wVILkQm1IQdFOtU5nXy4ut0IcP7/view?usp=sharing" target="_blank">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Upload Form</title>
+    <style>
+        body,
+        figure,
+        h1,
+        h2,
+        h3,
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+          background-image: linear-gradient(to right, #2a7c5e, #339d46);
+          color: #A5B;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+        nav ul {
+          list-style-type: none;
+          display: flex;
+        }
+        
+        nav ul li {
+          margin-right: 20px;
+        }
+        
+        nav ul li a {
+          color: #141736;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+          text-decoration: underline;
+        }
+
+        body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #3ebdd9;
+    border-radius: 3px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #000000;
+  color: #6c757d;
+  padding: 40px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-column ul li a {
+  color: #6c757d;
+}
+
+.fa {
+  margin-right: 10px;
+}
+.view-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Displayed as a block element */
+  font-size: 16px; /* Font size */
+  margin: 10px 0px; /* Some margin */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 10%;
+}
+.view-button:hover {
+  background-color: #3e8e41; /* Darker green background on hover */
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="\images\logo_nobg_nutriposhan.png" alt="Logo" style="
+            width: 256px;
+            height: 100px;
+        ">
+        </a>
+        <nav>
+          <ul>
+            
+            <li><a href="./login.html">Sign in</a></li>
+            <li><a href="./signup.html">Sign up</a></li>
+            <li><a href="https://www.poshantracker.in/ptcalculator" target="_blank">Calculator</a></li>
+            <li><a href="https://pmposhan.education.gov.in/" target="_blank">PM Poshan</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+        <h1>File Upload Form</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="file">Select a file:</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" value="Upload">
+            <button class="view-button">View report of last month</button>
+            <ul><li><a href="https://docs.google.com/spreadsheets/d/1NYUc8drn5ess91rIBoN6KFsLm6sPS5pS/edit?usp=sharing&ouid=100285538178675550429&rtpof=true&sd=true" target="_blank">View format for uploading the file</a></li></ul>
+
+        </form>
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa fa-map-marker"></i> 123 Main St, Anytown, USA 12345</li>
+              <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+              <li><i class="fa fa-envelope"></i> info@yourwebsite.com</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="https://drive.google.com/file/d/1jESP_UZ_FimL0cg2Ul09ivwNq22CBVMe/view?usp=sharing" target="_blank">Terms of Service</a></li>
+              <li><a href="https://drive.google.com/file/d/1s-jWOaHFYsrejLxBFhfYtfMsQ8_eNuAP/view?usp=sharing" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://drive.google.com/file/d/1yJOG9wVILkQm1IQdFOtU5nXy4ut0IcP7/view?usp=sharing" target="_blank">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
